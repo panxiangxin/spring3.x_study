@@ -1,0 +1,10 @@
+<root>
+  <facet id="me.spring">
+    <node name="libprov">
+      <node name="last-provider-used">
+        <attribute name="3.0" value="maven-lib-provider"/>
+        <attribute name="3.1" value="me-spring-library-provider"/>
+      </node>
+    </node>
+  </facet>
+</root>

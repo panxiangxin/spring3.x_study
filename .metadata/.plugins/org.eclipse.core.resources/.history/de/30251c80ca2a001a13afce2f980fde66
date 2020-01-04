@@ -1,0 +1,26 @@
+package com.baobaotao.context;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessorAdapter;
+
+public class MyInstantiationAwareBeanPostProcessor extends InstantiationAwareBeanPostProcessorAdapter{
+	
+	//接口方法 在实例化Bean前进行调用
+	@Override
+	public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
+		//仅对容器中car Bean进行处理
+		if("car".equals(beanName)) {
+			System.out.println("InstantiationAware BeanPostProcessor.postProcessBeforeInstantiation");
+		}
+		return null;
+	}
+	//接口方法 在实例化Bean后进行调用
+	@Override
+	public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
+		//仅对容器中car Bean进行处理
+		if("car".equals(beanName)) {
+			System.out.println("InstantiationAware BeanPostProcessor.postProcessAfterInstantiation");
+		}
+		return true;
+	}
+}

@@ -1,0 +1,10 @@
+package com.baobaotao.ioc;
+
+public class LiuDeHua {
+
+	public void responseAsk(String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

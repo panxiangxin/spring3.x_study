@@ -1,0 +1,31 @@
+package com.baobaotao.attr;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Boss {
+	
+	private Car car = new Car();
+	private List favorites = new ArrayList();
+	
+
+	public Car getCar() {
+		return car;
+	}
+
+	public void setCar(Car car) {
+		this.car = car;
+	}
+
+	public List getFavorites() {
+		return favorites;
+	}
+
+	public void setFavorites(List favorites) {
+		this.favorites = favorites;
+	}
+	
+	
+	
+}

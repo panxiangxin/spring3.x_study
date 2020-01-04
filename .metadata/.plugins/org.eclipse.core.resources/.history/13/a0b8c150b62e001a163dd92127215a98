@@ -1,0 +1,7 @@
+package chapter5.com.baobaotao.chartbean;
+
+import java.beans.PropertyEditorSupport;
+
+public class InverseEditor extends PropertyEditorSupport{
+
+}

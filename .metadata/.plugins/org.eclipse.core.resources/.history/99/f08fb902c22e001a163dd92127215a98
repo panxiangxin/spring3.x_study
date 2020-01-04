@@ -1,0 +1,32 @@
+package com.baobaotao.i18;
+
+import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class LocaleSample {
+
+	public void numberFormat() {
+		Locale locale = new Locale("zh","CN");
+		NumberFormat currFormat = NumberFormat.getCurrencyInstance(locale);
+		
+		double dmt = 1234.677;
+		System.out.println(currFormat.format(dmt));
+	}
+	
+	public void dateFormat() {
+		
+		Locale locale = new Locale("zh","CN");
+		Date date = new Date();
+		DateFormat dFormat = DateFormat.getDateInstance(DateFormat.MEDIUM,locale);
+		System.out.println(dFormat.format(date));
+	}
+	
+	public static void main(String[] args) {
+		
+		LocaleSample localeSample = new LocaleSample();
+		localeSample.numberFormat();
+		localeSample.dateFormat();
+	}
+}

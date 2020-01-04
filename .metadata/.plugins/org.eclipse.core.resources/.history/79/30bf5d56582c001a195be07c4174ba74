@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="car" class="com.baobaotao.attr.Car">
+		<property name="maxSpeed">
+			<value>200</value>
+		</property>
+		<property name="brand">
+			<value><![CDATA[红旗&CA72]]></value>
+		</property>
+	 </bean>
+	 
+	 <bean id="boss" class="com.baobaotao.attr.Boss">
+	 	<property name="car">
+	 		<ref bean="car"></ref>
+	 	</property>
+	 </bean>
+	 
+	 <bean id="boss1" class="com.baobaotao.attr.Boss">
+	 	<property name="favorites">
+	 		<list>
+	 			<value>看报</value>
+	 			<value>赛车</value>
+	 			<value>高尔夫</value>
+	 		</list>
+	 	</property>
+	 	 <property name="jobs">
+			<map>
+				<entry>
+					<key><value>AM</value></key>
+					<value>会见客户</value>
+				</entry>
+				<entry>
+					<key><value>PM</value></key>
+					<value>公司内部会议</value>
+				</entry>
+			</map>
+		</property>
+	 	<property name="mails">
+	 		<props>
+	 			<prop key="jobMail">john-office@baobaotao.com</prop>
+	 			<prop key="lifeMail">john-life@baobaotao.com</prop>
+	 		</props>
+	 	</property>
+	 	
+	 	 <property name="jobTimeMap">
+			<map>
+				<entry>
+					<key><value>会见客户</value></key>
+					<value>124</value>
+				</entry>
+				<entry>
+					<key><value>公司内部会议</value></key>
+					<value>111</value>
+				</entry>
+			</map>
+		</property>
+	 </bean>
+	 
+	 <!-- 内部Bean -->
+	<bean id="boss2" class="com.baobaotao.attr.Boss">
+		<property name="car">
+			<bean class="com.baobaotao.attr.Car">
+				<property name="maxSpeed" value="200" />
+				<property name="price" value="2000.00" />
+			</bean>
+		</property>
+	</bean>
+	 
+	 <bean id="boss3" class="com.baobaotao.attr.Boss">
+	 	<property name="car.brand" value="吉利CT50"></property>
+	 </bean>
+	 
+
+</beans>

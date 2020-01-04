@@ -1,0 +1,31 @@
+package com.baobaotao.ioc;
+
+public class MoAttack {
+	
+//	public void cityGateAsk() {
+//		//①演员直接侵入剧本
+//		LiuDeHua ldh = new LiuDeHua();
+//		ldh.responseAsk("墨者革离");
+//	}
+	
+//	private GeLi geli;
+//	//注入革离的具体扮演者
+//	public MoAttack(GeLi geli) {
+//		this.geli=geli;
+//	}
+//	public void cityGateAsk() {
+//		geli.responseAsk("墨者革离！");
+//		
+//	}
+	
+	private GeLi geli;
+	//属性注入方法
+	public void setGeli(GeLi geli) {
+		this.geli=geli;
+	}
+	public void cityGateAsk() {
+		geli.responseAsk("墨者革离！");
+		
+	}
+
+}

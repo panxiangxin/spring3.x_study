@@ -1,0 +1,7 @@
+dbName=sampledb
+driverClassName=com.mysql.jdbc.Driver
+url=jdbc:mysql://120.77.168.102:3306/${dbName}
+#userName=root
+#password=803309
+userName=WnplV/ietfQ=
+password=gJQ9O+q34qk\=

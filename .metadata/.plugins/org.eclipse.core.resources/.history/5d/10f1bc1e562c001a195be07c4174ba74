@@ -1,0 +1,21 @@
+package com.baobaotao.attr;
+
+import java.util.ArrayList;
+
+import antlr.collections.List;
+
+public class Boss {
+	
+	private Car car = new Car();
+	private List favorites = new ArrayList();
+	
+
+	public Car getCar() {
+		return car;
+	}
+
+	public void setCar(Car car) {
+		this.car = car;
+	}
+	
+}
