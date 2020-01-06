@@ -9,5 +9,6 @@
 </aop-project>
 <aop-project name="chapter4"/>
 <aop-project name="chapter5"/>
+<aop-project name="chapter6"/>
 <aop-project name="chapter"/>
 </aop-reference-model>

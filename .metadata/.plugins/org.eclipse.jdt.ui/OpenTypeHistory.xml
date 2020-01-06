@@ -3,4 +3,5 @@
     <typeInfo handle="=chapter2/E:\/Users\/xsx10\/AppData\/Local\/MyEclipse CI\/binary\/com.sun.java.jdk11.win32.x86_64_1.11.2\/lib\/jrt-fs.jar`java.base&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1547739302000"/>
     <typeInfo handle="=chapter5/E:\/Users\/xsx10\/AppData\/Local\/MyEclipse CI\/binary\/com.sun.java.jdk11.win32.x86_64_1.11.2\/lib\/jrt-fs.jar`java.desktop&lt;java.beans(PropertyEditorSupport.class[PropertyEditorSupport" modifiers="33" timestamp="1547739302000"/>
     <typeInfo handle="=chapter5/C:\/Users\/xsx10\/.m2\/repository\/org\/springframework\/spring-beans\/3.0.5.RELEASE\/spring-beans-3.0.5.RELEASE.jar&lt;org.springframework.beans.factory.config(PropertyPlaceholderConfigurer.class[PropertyPlaceholderConfigurer" modifiers="33" timestamp="1577763631858"/>
+    <typeInfo handle="=chapter6/C:\/Users\/xsx10\/.m2\/repository\/org\/springframework\/spring-aop\/3.0.5.RELEASE\/spring-aop-3.0.5.RELEASE.jar&lt;org.springframework.aop.support(DelegatingIntroductionInterceptor.class[DelegatingIntroductionInterceptor" modifiers="33" timestamp="1577763597313"/>
 </typeInfoHistroy>
