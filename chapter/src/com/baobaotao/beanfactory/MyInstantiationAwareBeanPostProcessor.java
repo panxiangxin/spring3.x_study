@@ -10,7 +10,7 @@ public class MyInstantiationAwareBeanPostProcessor extends InstantiationAwareBea
 	
 	//接口方法 在实例化Bean前进行调用
 	@Override
-	public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
+	public Object postProcessBeforeInstantiation(Class beanClass, String beanName) throws BeansException {
 		//仅对容器中car Bean进行处理
 		if("car".equals(beanName)) {
 			System.out.println("InstantiationAware BeanPostProcessor.postProcessBeforeInstantiation");

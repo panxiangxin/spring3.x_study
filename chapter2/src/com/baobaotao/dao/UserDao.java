@@ -1,14 +1,9 @@
 package com.baobaotao.dao;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
+import com.baobaotao.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.stereotype.Repository;
-
-import com.baobaotao.domain.User;
 
 @Repository
 public class UserDao {
@@ -28,13 +23,11 @@ public class UserDao {
 				+" FROM t_user WHERE user_name = ?";
 		final User user = new User();
 		jdbcTemplate.query(sqlStr, new Object[] {userName},
-				new RowCallbackHandler() {
-			public void processRow(ResultSet rs) throws SQLException {
-				user.setUserId(rs.getInt("user_id"));
-				user.setUserName(userName);
-				user.setCredits(rs.getInt("credits"));
-			}
-		});
+				rs -> {
+					user.setUserId(rs.getInt("user_id"));
+					user.setUserName(userName);
+					user.setCredits(rs.getInt("credits"));
+				});
 		return user;
 	}
 	

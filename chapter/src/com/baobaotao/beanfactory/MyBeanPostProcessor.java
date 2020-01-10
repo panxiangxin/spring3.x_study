@@ -6,7 +6,8 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import com.baobaotao.Car;
 
 public class MyBeanPostProcessor implements BeanPostProcessor{
-	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {		
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 		if(beanName.equals("car")){
 			Car car = (Car)bean;
 			if(car.getColor() == null){
@@ -16,7 +17,8 @@ public class MyBeanPostProcessor implements BeanPostProcessor{
 		}
 		return bean;
 	}
-	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {		
+	@Override
+	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
 		if(beanName.equals("car")){
 			Car car = (Car)bean;
 			if(car.getMaxSpeed() >= 200){

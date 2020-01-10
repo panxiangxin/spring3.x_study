@@ -4,11 +4,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
+/**
+ * @author www72
+ */
 @Configuration
 public class DaoConfig {
     
 	
-	@Bean(name="")
+	@Bean
 	public UserDao userDao(){
 		return new UserDao();
 	}
