@@ -8,7 +8,7 @@
   <description/>
   <properties>
     <webVersion>2.5</webVersion>
-    <org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+    <org.springframework.version>5.2.2.RELEASE</org.springframework.version>
     <guice.version>3.0-rc3</guice.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <jackson-version>1.6.3</jackson-version>
