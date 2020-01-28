@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<user xmlns="http://www.baobaotao.com/domain/jaxb">
+    <userName>jaxb</userName>
+    <credits>0</credits>
+    <logs>
+        <loginLog>
+            <ip>192.168.1.91</ip>
+            <loginDate>2020-01-28+08:00</loginDate>
+        </loginLog>
+        <loginLog>
+            <ip>192.168.1.92</ip>
+            <loginDate>2020-01-28+08:00</loginDate>
+        </loginLog>
+        <loginLog>
+            <ip>192.168.1.93</ip>
+            <loginDate>2020-01-28+08:00</loginDate>
+        </loginLog>
+    </logs>
+</user>

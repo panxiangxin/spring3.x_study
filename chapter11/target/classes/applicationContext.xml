@@ -10,7 +10,16 @@
 
     <context:property-placeholder location="classpath:jdbc.properties"/>
 	<bean id="nativeJdbcExtractor" lazy-init="true" class="org.springframework.jdbc.support.nativejdbc.CommonsDbcpNativeJdbcExtractor"/>
+	<bean id="incre" class="org.springframework.jdbc.support.incrementer.MySQLMaxValueIncrementer"
+		  p:incrementerName="t_post_id"
+		  p:columnName="sequence_id"
+		  p:cacheSize="10"
+		  p:dataSource-ref="dataSource"/>
 	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true"/>
+
+	<bean id="namedParamJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+		<constructor-arg ref="dataSource"/>
+	</bean>
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close" 
 		p:driverClassName="${jdbc.driverClassName}"

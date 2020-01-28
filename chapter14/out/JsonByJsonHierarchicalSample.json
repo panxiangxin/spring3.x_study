@@ -1,0 +1,19 @@
+{"user": {
+  "userId": 1,
+  "userName": "xstream",
+  "credits": 0,
+  "logs": [
+    {
+      "userId": 0,
+      "loginLogId": 0,
+      "ip": "192.168.1.91",
+      "loginDate": "2020-01-28 19:46:33.688 CST"
+    },
+    {
+      "userId": 0,
+      "loginLogId": 0,
+      "ip": "192.168.1.92",
+      "loginDate": "2020-01-28 19:46:33.688 CST"
+    }
+  ]
+}}
